@@ -1,0 +1,73 @@
+.user__container {
+    border: 2px solid rgb(172, 169, 169);
+    border-radius: 10px;
+    width: 320px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.user__list {
+    margin-bottom: 20px;
+}
+
+.user__item {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-icon {
+    color: black;
+    font-size: 20px;
+    padding-right: 5px;
+    margin-bottom: -3px;
+}
+
+.user__item span:first-child {
+    color: #b0aeae;
+    margin-top: 15px;
+}
+
+.user__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.btn__delete ion-icon {
+    color: white;
+    padding: 7px 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn__update ion-icon {
+    color: black;
+    padding: 7px 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn__delete {
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.btn__update {
+    border: 1px solid rgba(0, 0, 0, 0.504) ;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.btn__delete:hover, .btn__update:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+@media (max-width: 400px) {
+    .user__container {
+        width: 280px;
+    }
+}

@@ -1,0 +1,102 @@
+.form__background {
+    background-color: #807f7f9f;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .25s;
+}
+
+.form__background.able {
+    transform: scale(1);
+    transition: transform .25s;
+}
+
+.form__container {
+    background-color: white;
+    padding: 90px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.form__close {
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.form__close ion-icon {
+    font-size: 30px;
+}
+
+.form__close:hover {
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.form__title {
+    position: absolute;
+    top: 2.2rem;
+    left: 2rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.form__item input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid rgb(189, 184, 184);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input#birthday {
+    color: rgb(189, 184, 184);
+    font-size: 16px;
+}
+
+.form__item label {
+    padding-bottom: 10px;
+}
+
+.form__item input::placeholder {
+    color: rgb(189, 184, 184);
+}
+
+.form__btn {
+    margin-top: 2rem;
+    padding: 13px 10px;
+    color: white;
+    border: none;
+    background-color: #555A88;
+}
+
+@media (max-width: 420px) {
+    .form__container {
+        padding: 80px 15px 20px 15px;
+        gap: 5px;
+    }
+
+    .form__item input {
+        padding: 7px;
+        width: 260px;
+        border: 2px solid rgb(189, 184, 184);
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}
